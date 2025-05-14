@@ -1,18 +1,3 @@
-CREATE TABLE Admins (
-    admin_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL
-);
-
-CREATE TABLE Users (
-    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL,
-    phone TEXT
-);
-
 CREATE TABLE Products (
     product_id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
