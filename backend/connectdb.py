@@ -5,6 +5,7 @@ database_path = os.path.join(os.path.dirname(__file__), '..', 'database', 'datab
 
 def connect_db():
   conn = sqlite3.connect(database_path)
+  conn.row_factory = sqlite3.Row
   print("forbundet til databasen")
   return conn
 
