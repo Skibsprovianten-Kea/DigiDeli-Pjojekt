@@ -3,7 +3,7 @@ from backend import connectdb
 
 app = Flask(__name__)
 
-@app.route('/udvalg')
+@app.route('/udvalg_1')
 def udvalg():
   conn = connectdb()
   cursor = conn.cursor()
@@ -13,5 +13,5 @@ def udvalg():
   
   conn.close()
   
-  return render_template('udvalg.html', produkter = produkter, tilstand = 'Tændt')
+  return render_template('udvalg_1.html', produkter = produkter, tilstand = 'Tændt')
   
