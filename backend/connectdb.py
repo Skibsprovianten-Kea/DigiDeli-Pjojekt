@@ -1,7 +1,7 @@
 import sqlite3
 import os
 
-database_path = os.path.join(os.path.dirname(__file__), '..', 'database', 'connectdb.py')
+database_path = os.path.join(os.path.dirname(__file__), '..', 'database', 'database.sql')
 
 def connect_db():
   conn = sqlite3.connect(database_path)
