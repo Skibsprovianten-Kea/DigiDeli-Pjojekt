@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}b2b bestil{% endblock %}
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="crossorigin="anonymous"></script>
+<body style="background-color: azure;">
+    <div class="container"">
+        <form action="https://formspree.io/f/mgvkrgvr" method="POST">
+            <h3 style="margin-top: 50px; text-align: center;" >B2B ordrer</h3><br /><br /><br />
+            <div class="form-group">
+                <input 
+                type="text"
+                class="form-control"
+                id="name" 
+                name="name" 
+                placeholder="indtast navn" required/>
+            </div>
+
+            <div class="form-group">
+                <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="email" 
+                placeholder="email" 
+                required>
+            </div>
+
+            <div class="form-group">
+                <textarea 
+                class="form-control" 
+                id="message" 
+                name="message" 
+                placeholder="din besked" 
+                required> </textarea>
+            </div>
+        
+                <input type="submit" value="Send besked" />
+
+        </form>
+    </div>
+</body>    
+</Script>
+
+{% endblock %}
+

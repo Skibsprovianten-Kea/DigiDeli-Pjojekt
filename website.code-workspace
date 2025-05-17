@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "website",
+			"path": "."
+		},
+		{
+			"name": "DigiDeli-Projekt",
+			"path": "DigiDeli-Projekt"
+		},
+		{
+			"name": "SSH FS - raspi4",
+			"uri": "ssh://raspi4/home/sorent"
+		},
+		{
+			"name": "DigiDeli-Projekt",
+			"path": "../../../../Documents/GitHub/DigiDeli-Projekt"
+		}
+	],
+	"settings": {}
+}

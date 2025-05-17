@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}sign up{% endblock %}
+{% block content %}
+<div style="width: 50%; margin: 0 auto;">
+<form method="POST">
+    <h3 style="margin-top: 50px; text-align: center;" >Registrer bruger</h3><br /><br /><br />
+    <div class="form-group">
+        <input 
+        type="text" 
+        class="form-control" 
+        id="brugernavn" 
+        name="brugernavn" 
+        placeholder="Indtast brugernavn" 
+        required>
+    </div>
+<br />
+    <div class="form-group">
+        <input 
+        type="email" 
+        class="form-control" 
+        id="email" 
+        name="email" 
+        placeholder="Indtast email" 
+        required>
+    </div>
+<br />
+    <div class="form-group">
+        <input 
+        type="password" 
+        class="form-control" 
+        id="password1" 
+        name="password1" 
+        placeholder="Indtast password" 
+        required>
+    </div>
+<br />
+    <div class="form-group">
+        <input 
+        type="password" 
+        class="form-control" 
+        id="password2" 
+        name="password2" 
+        placeholder="Bekræft password" 
+        required>
+    </div> 
+    <br />
+    <br />
+    <button 
+    type="submit" 
+    class="btn btn-primary">Opret bruger</button>
+</form>
+</div>
+
+{% endblock %}

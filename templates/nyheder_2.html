@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}arrangementer{% endblock %}
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="crossorigin="anonymous"></script>
+<body style="background-image: url(/static/3.jpg); background-size: cover;">
+    
+   
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Kort 1 -->
+            <div class="col-md">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/static/sker_1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">jazz</h5>
+                        <p class="card-text">kom til jazz den 23/34-13.</p>
+                        <a href="https://dr.dk" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kort 2 -->
+            <div class="col-md">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/static/sker_2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">medina</h5>
+                        <p class="card-text">kom og hør medina spille skak.</p>
+                        <a href="https://skak.dk" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kort 3 -->
+            <div class="col-md">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/static/sker_3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">film</h5>
+                        <p class="card-text">så er der film folkens. i morgen</p>
+                        <a href="https://imdb.com" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+</body
+
+{% endblock %}
